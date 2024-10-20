@@ -1,0 +1,74 @@
+{
+    "lotte.lifestyle.test":{
+       "passages": 119461,
+       "avg_doclen": 198.50141050217226,
+       "embeddings": 23713177,
+       "queries": 661
+    },
+    "lotte.writing.test":{
+       "passages": 199994,
+       "avg_doclen": 161.0470964128924,
+       "embeddings": 32208453,
+       "queries": 1071
+    },
+    "lotte.recreation.test":{
+       "passages": 166975,
+       "avg_doclen": 179.90365024704298,
+       "embeddings": 30039412,
+       "queries": 924
+    },
+    "lotte.technology.test":{
+       "passages": 638509,
+       "avg_doclen": 206.6096405845493,
+       "embeddings": 131922115,
+       "queries": 596
+    },
+    "lotte.science.test":{
+       "passages": 1694164,
+       "avg_doclen": 260.9866441501531,
+       "embeddings": 442154177,
+       "queries": 617
+    },
+    "lotte.pooled.test":{
+       "passages":2819103,
+       "avg_doclen":234.1302655490062,
+       "embeddings": 660037334,
+       "queries": 3869
+    },
+    "beir.nfcorpus.test":{
+       "passages": 3633,
+       "avg_doclen": 370.8676025323424,
+       "embeddings": 1347362,
+       "queries": 323
+    },
+    "beir.scifact.test":{
+       "passages": 5183,
+       "avg_doclen": 361.19853366776,
+       "embeddings": 1872092,
+       "queries": 300
+    },
+    "beir.scidocs.test":{
+       "passages": 25657,
+       "avg_doclen": 244.34626027984567,
+       "embeddings": 6269192,
+       "queries": 1000
+    },
+    "beir.fiqa.test":{
+       "passages": 57638,
+       "avg_doclen": 177.40461154099725,
+       "embeddings": 10225247,
+       "queries": 648
+    },
+    "beir.webis-touche2020.test":{
+       "passages": 382545,
+       "avg_doclen": 242.15915251800442,
+       "embeddings": 92636773,
+       "queries": 49
+    },
+    "beir.quora.test":{
+       "passages": 522931,
+       "avg_doclen": 17.436659903505433,
+       "embeddings": 9118170,
+       "queries": 10000
+    }
+ }

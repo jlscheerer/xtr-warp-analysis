@@ -1,0 +1,212 @@
+{
+    "table": {
+        "title": "nDCG@10 on BEIR",
+        "caption": "nDCG@10 on BEIR. The last column shows the average over 6 BEIR datasets.",
+        "config": {
+            "collection": "beir",
+            "dataset": null,
+            "split": "test",
+            "metric": "ndcg@10"
+        },
+        "groups": [
+            ["BM25", "ColBERT", "GTR_base", "T5-ColBERT_base"],
+            [],
+            ["Splade_v2", "ColBERT_v2"],
+            ["GTR_xxl", "T5-ColBERT_xxl", "XTR_xxl"]
+        ],
+        "notes": {
+            "cross-encoder distillation": {
+                "symbol": "clubsuit",
+                "models": ["Splade_v2", "ColBERT_v2"]
+            },
+            "model-based hard negatives": {
+                "symbol": "diamondsuit",
+                "models": ["Splade_v2", "ColBERT_v2"]
+            }
+        },
+        "keys": {
+            "AR": "ArguAna",
+            "TO": "Touché-2020",
+            "FE": "FEVER",
+            "CF": "Climate-Fever",
+            "SF": "SciFact",
+            "CV": "TREC-COVID",
+            "NF": "NFCorpus",
+            "NQ": "Natural Questions",
+            "HQ": "HotpotQA",
+            "FQ": "FiQA-2018",
+            "SD": "SCIDOCS",
+            "DB": "DBPedia",
+            "QU": "Quora"
+        },
+        "source": {
+            "title": "Rethinking the Role of Token Retrieval in Multi-Vector Retrieval",
+            "author": "Jinhyuk Lee and Zhuyun Dai and Sai Meher Karthik Duddu and Tao Lei and Iftekhar Naim and Ming-Wei Chang and Vincent Y. Zhao",
+            "url": "https://arxiv.org/abs/2304.01982",
+            "page": 6,
+            "table": "Table 2 (top)"
+        }
+    },
+    "data": {
+      "BM25": {
+        "MS": 22.8,
+        "AR": 31.5,
+        "TO": 36.7,
+        "FE": 75.3,
+        "CF": 21.3,
+        "SF": 66.5,
+        "CV": 65.6,
+        "NF": 32.5,
+        "NQ": 32.9,
+        "HQ": 60.3,
+        "FQ": 23.6,
+        "SD": 15.8,
+        "DB": 31.3,
+        "QU": 78.9
+      },
+      "ColBERT": {
+        "MS": 40.1,
+        "AR": 23.3,
+        "TO": 20.2,
+        "FE": 77.1,
+        "CF": 18.4,
+        "SF": 67.1,
+        "CV": 67.7,
+        "NF": 30.5,
+        "NQ": 52.4,
+        "HQ": 59.3,
+        "FQ": 31.7,
+        "SD": 14.5,
+        "DB": 39.2,
+        "QU": 85.4
+      },
+      "GTR_base": {
+        "MS": 42.0,
+        "AR": 51.1,
+        "TO": 21.5,
+        "FE": 66.0,
+        "CF": 24.1,
+        "SF": 60.0,
+        "CV": 53.9,
+        "NF": 30.8,
+        "NQ": 49.5,
+        "HQ": 53.5,
+        "FQ": 34.9,
+        "SD": 14.9,
+        "DB": 39.2,
+        "QU": 88.1
+      },
+      "T5-ColBERT_base": {
+        "MS": 45.6,
+        "AR": 28.8,
+        "TO": 31.1,
+        "FE": 72.4,
+        "CF": 18.1,
+        "SF": 70.4,
+        "CV": 68.3,
+        "NF": 34.0,
+        "NQ": 52.2,
+        "HQ": 61.7,
+        "FQ": 33.4,
+        "SD": 14.1,
+        "DB": 41.6,
+        "QU": 82.3
+      },
+      "XTR_base": {
+        "MS": 45.0,
+        "AR": 40.7,
+        "TO": 31.3,
+        "FE": 73.7,
+        "CF": 20.7,
+        "SF": 71.0,
+        "CV": 73.6,
+        "NF": 34.0,
+        "NQ": 53.0,
+        "HQ": 64.7,
+        "FQ": 34.7,
+        "SD": 14.5,
+        "DB": 40.9,
+        "QU": 86.1
+      },
+      "Splade_v2": {
+        "MS": 43.3,
+        "AR": 47.9,
+        "TO": 27.2,
+        "FE": 78.6,
+        "CF": 23.5,
+        "SF": 69.3,
+        "CV": 71.0,
+        "NF": 33.4,
+        "NQ": 52.1,
+        "HQ": 68.4,
+        "FQ": 33.6,
+        "SD": 15.8,
+        "DB": 43.5,
+        "QU": 83.8
+      },
+      "ColBERT_v2": {
+        "MS": null,
+        "AR": 46.3,
+        "TO": 26.3,
+        "FE": 78.5,
+        "CF": 17.6,
+        "SF": 69.3,
+        "CV": 73.8,
+        "NF": 33.8,
+        "NQ": 56.2,
+        "HQ": 66.7,
+        "FQ": 35.6,
+        "SD": 15.4,
+        "DB": 44.6,
+        "QU": 85.2
+      },
+      "GTR_xxl": {
+        "MS": 44.2,
+        "AR": 54.0,
+        "TO": 23.3,
+        "FE": 74.0,
+        "CF": 26.7,
+        "SF": 66.2,
+        "CV": 50.1,
+        "NF": 34.2,
+        "NQ": 56.8,
+        "HQ": 59.9,
+        "FQ": 46.7,
+        "SD": 16.1,
+        "DB": 40.8,
+        "QU": 89.2
+      },
+      "T5-ColBERT_xxl": {
+        "MS": 47.3,
+        "AR": 33.8,
+        "TO": 31.0,
+        "FE": 74.2,
+        "CF": 19.7,
+        "SF": 73.1,
+        "CV": 75.8,
+        "NF": 35.2,
+        "NQ": 60.5,
+        "HQ": 65.2,
+        "FQ": 43.5,
+        "SD": 17.1,
+        "DB": 45.0,
+        "QU": 86.0
+      },
+      "XTR_xxl": {
+        "MS": 46.6,
+        "AR": 44.2,
+        "TO": 30.9,
+        "FE": 77.0,
+        "CF": 24.5,
+        "SF": 74.3,
+        "CV": 78.9,
+        "NF": 35.3,
+        "NQ": 60.9,
+        "HQ": 66.2,
+        "FQ": 43.8,
+        "SD": 17.1,
+        "DB": 44.3,
+        "QU": 88.1
+      }
+    }
+  }

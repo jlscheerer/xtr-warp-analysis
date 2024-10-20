@@ -1,0 +1,109 @@
+{
+    "table": {
+        "title": "Success@5 on LoTTE",
+        "caption": "Success@5 on LoTTE datasets. The last column shows the average all 6 LoTTE datasets.",
+        "config": {
+            "collection": "lotte",
+            "dataset": null,
+            "split": "test",
+            "metric": "success@5"
+        },
+        "groups": [
+            ["BM25", "ColBERT", "GTR_base"],
+            [],
+            ["Splade_v2", "ColBERT_v2"],
+            ["GTR_xxl", "XTR_xxl"]
+        ],
+        "notes": {
+            "cross-encoder distillation": {
+                "symbol": "clubsuit",
+                "models": ["Splade_v2", "ColBERT_v2"]
+            },
+            "model-based hard negatives": {
+                "symbol": "diamondsuit",
+                "models": ["Splade_v2", "ColBERT_v2"]
+            }
+        },
+        "keys": {
+            "Writing": "Writing",
+            "Rec.": "Recreation",
+            "Sci.": "Science",
+            "Tech.": "Technology",
+            "Life.": "Lifestyle",
+            "Pooled": "Pooled"
+        },
+        "source": {
+            "title": "Rethinking the Role of Token Retrieval in Multi-Vector Retrieval",
+            "author": "Jinhyuk Lee and Zhuyun Dai and Sai Meher Karthik Duddu and Tao Lei and Iftekhar Naim and Ming-Wei Chang and Vincent Y. Zhao",
+            "url": "https://arxiv.org/abs/2304.01982",
+            "page": 6,
+            "table": "Table 2 (bottom)"
+        }
+    },
+    "data": {
+      "BM25": {
+        "Writing": 60.3,
+        "Rec.": 56.5,
+        "Sci.": 32.7,
+        "Tech.": 41.8,
+        "Life.": 63.8,
+        "Pooled": 48.3
+      },
+      "ColBERT": {
+        "Writing": 74.7,
+        "Rec.": 68.5,
+        "Sci.": 53.6,
+        "Tech.": 61.9,
+        "Life.": 80.2,
+        "Pooled": 67.3
+      },
+      "GTR_base": {
+        "Writing": 74.1,
+        "Rec.": 65.7,
+        "Sci.": 49.8,
+        "Tech.": 58.1,
+        "Life.": 82.0,
+        "Pooled": 65.0
+      },
+      "XTR_base": {
+        "Writing": 77.0,
+        "Rec.": 69.4,
+        "Sci.": 54.9,
+        "Tech.": 63.2,
+        "Life.": 82.1,
+        "Pooled": 69.0
+      },
+      "Splade_v2": {
+        "Writing": 77.1,
+        "Rec.": 69.0,
+        "Sci.": 55.4,
+        "Tech.": 62.4,
+        "Life.": 82.3,
+        "Pooled": 68.9
+      },
+      "ColBERT_v2": {
+        "Writing": 80.1,
+        "Rec.": 72.3,
+        "Sci.": 56.7,
+        "Tech.": 66.1,
+        "Life.": 84.7,
+        "Pooled": 71.6
+      },
+      "GTR_xxl": {
+        "Writing": 83.9,
+        "Rec.": 78.0,
+        "Sci.": 60.0,
+        "Tech.": 69.5,
+        "Life.": 87.4,
+        "Pooled": 76.0
+      },
+      "XTR_xxl": {
+        "Writing": 83.3,
+        "Rec.": 79.3,
+        "Sci.": 60.8,
+        "Tech.": 73.7,
+        "Life.": 89.1,
+        "Pooled": 77.3
+      }
+    }
+}

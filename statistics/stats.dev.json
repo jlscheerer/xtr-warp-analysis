@@ -1,0 +1,56 @@
+{
+    "lotte.lifestyle.dev":{
+       "passages": 268893,
+       "avg_doclen": 214.3728174403945,
+       "embeddings": 57643350,
+       "queries": 417
+    },
+    "lotte.writing.dev":{
+       "passages": 277072,
+       "avg_doclen": 247.42782020557834,
+       "embeddings": 68555321,
+       "queries": 497
+    },
+    "lotte.recreation.dev":{
+       "passages": 263025,
+       "avg_doclen": 267.18418401292655,
+       "embeddings": 70276120,
+       "queries": 563
+    },
+    "lotte.technology.dev":{
+       "passages": 1276222,
+       "avg_doclen": 174.75306255494735,
+       "embeddings": 223023703,
+       "queries": 916
+    },
+    "lotte.science.dev":{
+       "passages": 343642,
+       "avg_doclen": 266.9962519133284,
+       "embeddings": 91751126,
+       "queries": 538
+    },
+    "lotte.pooled.dev":{
+       "passages": 2428854,
+       "avg_doclen": 210.49005827439606,
+       "embeddings": 511249620,
+       "queries": 2931
+    },
+    "beir.nfcorpus.dev":{
+       "passages": 3633,
+       "avg_doclen": 370.8676025323424,
+       "embeddings": 1347362,
+       "queries": 324
+    },
+    "beir.fiqa.dev":{
+       "passages": 57638,
+       "avg_doclen": 177.40461154099725,
+       "embeddings": 10225247,
+       "queries": 500
+    },
+    "beir.quora.dev":{
+       "passages": 522931,
+       "avg_doclen": 17.436659903505433,
+       "embeddings": 9118170,
+       "queries": 5000
+    }
+ }
